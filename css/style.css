@@ -1,0 +1,235 @@
+body {
+    font-family: 'open-sans',sans-serif;
+}
+
+h1 {
+    color: #ccc;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+figure {
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    background: #fff;
+    margin-bottom: 400px;
+    overflow: hidden;
+}
+
+.content article {
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Parallax Header*/
+
+.bird-box {
+    position: relative;
+    height: 600px;
+    background: url(../images/bird-bg.jpg) top center;
+    background-size: auto 600px;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.logo {
+    height: 100px;
+    width: 100%;
+    background: url(../images/black-bird-logo.svg) no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.fore-bird {
+    width: 960px;
+    height: 733px;
+    background: url(../images/fore-bird.png) no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top: 380px;
+    
+}
+
+.back-bird {
+    width: 960px;
+    height: 298px;
+    background: url(../images/back-bird.png) no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    
+}
+
+/* Model Grid */
+
+.clothes-pics figure {
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition : all 0.4s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.clothes-pics .is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+ figure figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out;
+}
+
+.clothes-pics figure:hover figcaption {
+      left: 0%; 
+}
+
+.clothes-pics figure img {
+      display: block;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out; 
+}
+
+
+.clothes-pics figure:hover img {
+      transform: scale(1.1); 
+}
+
+
+/* Large Window */
+
+.large-window {
+    height: 640px;
+    background: url(../images/model2.jpg) repeat-y;
+    background-position: center 0;
+    background-attachment: fixed;
+    margin-top: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+.window-tint {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.promo-text {
+    color: #fff;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.promo-text strong {
+    display: block;
+    
+}
+
+strong span {
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+    
+}
+
+.window-cta {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+ .window-cta:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Posts */
+.blog-posts {
+    margin-top: 100px;
+}
+
+.post {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 0;
+    background: #fff;
+    position: relative;
+}
+
+.post-1 {
+    transform: translate(100px,20px)
+}
+
+.post-2 {
+    z-index: 2;
+}
+
+.post-3 {
+    transform: translate(-100px,20px)
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1; 
+}
+
+.footer-stuff {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #fff;
+    padding: 40px 0;
+}
+
+@media screen and (max-width:600px) {
+    .fore-bird {
+        margin-left: -600px;
+    }
+}
+
+
